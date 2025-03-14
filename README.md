@@ -2,6 +2,8 @@
 
 Run OCaml inside a VSCode Development Container.
 
+![CleanShot 2025-03-14 at 14 12 58@2x](https://github.com/user-attachments/assets/82b74f87-cb63-475e-916a-606ab5915251)
+
 ## Getting Started
 
 To get started with this project, you'll need Docker installed on your machine. The project uses a development container to provide a consistent environment with OCaml-LSP (for editor integration) and debugger support.
@@ -20,7 +22,7 @@ To get started with this project, you'll need Docker installed on your machine. 
 
 The repository provides an example `notebook.ml` file which can be run using the following methods:
 
-1. Debug the file using the VS Code `OCaml Debug notebook.ml` configuration.
+1. Debug the file using the VS Code `OCaml: Debug notebook.ml` configuration.
 2. Run the file using `ocaml notebook.ml` in the terminal.
 
 > [!IMPORTANT]
