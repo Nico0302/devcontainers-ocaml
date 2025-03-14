@@ -13,24 +13,23 @@ To get started with this project, you'll need Docker installed on your machine. 
 
 ### Setting Up the Development Container
 
-1. Clone the repository to your local machine.
-2. Open the project folder in Visual Studio Code.
-3. When prompted, reopen the folder in the container. This will build the Docker image defined in the `.devcontainer/Dockerfile` and set up your environment.
+1. Run `>Dev Containers: Clone repository in container volume...` using `CMD+Shift+P` in VS Code
+2. Enter `nico0302/devcontainers-ocaml`
 
-### Executing OCaml Scripts
+### Executing OCaml Code
 
-Each OCaml script file is ready for execution in VS Code with full debugger support and OCaml-LSP integration.
+The repository provides an example `notebook.ml` file which can be run using the following methods:
 
-- **Run with the debugger:** Open your OCaml script file in VS Code, then go to the Run and Debug pane and start debugging.
-- **Run directly from the terminal:** You can also execute an OCaml script via the integrated terminal:
-  ```bash
-  ocaml myscript.ml
-  ```
+1. Debug the file using the VS Code `OCaml Debug notebook.ml` configuration.
+2. Run the file using `ocaml notebook.ml` in the terminal.
 
-### Contributing
+> [!IMPORTANT]
+> The debugger is only configured for the `notebook.ml` file. You either need to copy your code into this file to debug it (for testing code snippets) or reconfigure the [dune][https://dune.readthedocs.io/en/stable/quick-start.html] project (`dune` and `dune-project` files) and `.vscode/launch.json`.
 
-Contributions are welcome! Please feel free to submit a pull request or open an issue with any suggestions or improvements.
+If you want to run small code snippets in your terminal, you can use the [utop](https://github.com/ocaml-community/utop) command:
 
-### License
+```bash
+utop
+```
 
-This project is licensed under the MIT License. See the LICENSE file for more details.
+This is a improved version of the default `ocaml` shell.

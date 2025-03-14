@@ -8,7 +8,10 @@
             "extensions": [
                 "streetsidesoftware.code-spell-checker",
                 "ocamllabs.ocaml-platform"
-            ]
+            ],
+            "settings": {
+                "terminal.integrated.defaultProfile.linux": "bash"
+            }
         }
     }
 }

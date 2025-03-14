@@ -13,6 +13,17 @@ RUN apt-get update && apt-get install -y \
 
 # Switch to opam user for OPAM operations
 USER opam
-RUN opam update && opam install -y ocaml-lsp-server utop
 
-WORKDIR /home/$USERNAME/workspace
+# Move utop-config file into .config/utop/init.ml
+RUN mkdir -p /home/opam/.config/utop
+COPY utop-config /home/opam/.config/utop/init.ml
+
+RUN opam update && opam install -y \
+    dune \
+    ocaml-lsp-server \
+    earlybird \
+    ocamlformat \
+    utop
+
+# SHELL ["/bin/bash", "-c"]
+WORKDIR /home/opam/workspace

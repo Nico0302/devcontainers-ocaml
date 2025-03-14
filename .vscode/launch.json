@@ -2,7 +2,7 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "OCaml Debug notebook.ml",
+            "name": "OCaml: Debug notebook.ml",
             "type": "ocaml.earlybird",
             "preLaunchTask": "OCaml: Dune Build",
             "request": "launch",
