@@ -24,7 +24,7 @@ The repository provides an example `notebook.ml` file which can be run using the
 2. Run the file using `ocaml notebook.ml` in the terminal.
 
 > [!IMPORTANT]
-> The debugger is only configured for the `notebook.ml` file. You either need to copy your code into this file to debug it (for testing code snippets) or reconfigure the [dune][https://dune.readthedocs.io/en/stable/quick-start.html] project (`dune` and `dune-project` files) and `.vscode/launch.json`.
+> The debugger is only configured for the `notebook.ml` file. You either need to copy your code into this file to debug it (for testing code snippets) or reconfigure the [dune](https://dune.readthedocs.io/en/stable/quick-start.html) project and `.vscode/launch.json`.
 
 If you want to run small code snippets in your terminal, you can use the [utop](https://github.com/ocaml-community/utop) command:
 

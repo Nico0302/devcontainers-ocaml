@@ -2,6 +2,10 @@
     "build": {
         "dockerfile": "Dockerfile"
     },
+    "runArgs": [
+        "--name",
+        "devcontainer-ocaml"
+    ],
     "remoteUser": "opam",
     "customizations": {
         "vscode": {
