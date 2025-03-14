@@ -1,8 +1,8 @@
-# 🐪 OCaml DevContainer
+# 🐪 OCaml Dev Container
 
-Run OCaml inside a VSCode Development Container.
+Run OCaml inside a VS Code Dev Container with debugging support and IntelliSense.
 
-![CleanShot 2025-03-14 at 14 12 58@2x](https://github.com/user-attachments/assets/82b74f87-cb63-475e-916a-606ab5915251)
+![VS Code window with the OCaml debugger](https://github.com/user-attachments/assets/82b74f87-cb63-475e-916a-606ab5915251)
 
 ## Getting Started
 
