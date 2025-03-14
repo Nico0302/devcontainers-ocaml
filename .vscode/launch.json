@@ -1,0 +1,17 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "OCaml Debug notebook.ml",
+            "type": "ocaml.earlybird",
+            "preLaunchTask": "OCaml: Dune Build",
+            "request": "launch",
+            "stopOnEntry": false,
+            "console": "integratedTerminal",
+            "program": "${workspaceFolder}/_build/default/notebook.bc",
+            "onlyDebugGlob": "<${workspaceFolder}/**/*>",
+            "yieldSteps": 1024,
+            "cwd": "${workspaceFolder}"
+        },
+    ]
+}

@@ -1,0 +1,14 @@
+{
+    "build": {
+        "dockerfile": "Dockerfile"
+    },
+    "remoteUser": "opam",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "streetsidesoftware.code-spell-checker",
+                "ocamllabs.ocaml-platform"
+            ]
+        }
+    }
+}

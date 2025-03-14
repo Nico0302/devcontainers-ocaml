@@ -1,0 +1,6 @@
+{
+    "[ocaml]": {
+        "editor.codeLens": false
+    },
+    "ocaml.dune.autoDetect": false,
+}
